@@ -1,0 +1,19 @@
+This project requires:
+- Windows SDK
+- shlwapi.lib, rpc42.lib
+- DirectX SDK (dsound.lib)
+- Windows Media Format SDK (wmstub.lib)
+
+
+This is an exerpt from the WMFSDK about building:
+
+To use the Windows Media Format SDK, you must compile your application 
+with the multithreaded DLL C-runtime library. To accomplish this, make 
+the following settings under Settings of the Project menu: 
+
+- C/C++ / Code Generation / Use run-time library should be set to 
+  Multithreaded-DLL (either Debug or not). 
+- Link / General / Ignore all default libraries should be on. 
+- Link / General / Object/library modules should include Msvcrt.lib 
+  (or Msvcrtd.lib), wmstub.lib, and Wmvcore.lib. It should not include Libc.lib 
+  or any variation. 

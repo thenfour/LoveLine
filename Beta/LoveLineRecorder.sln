@@ -1,0 +1,80 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoveLineRecorder", "LoveLineRecorder\LoveLineRecorder.vcproj", "{FB1923B2-B3FB-43E1-84FD-5C0C2CE27B01}"
+	ProjectSection(ProjectDependencies) = postProject
+		0 = {C376AAC8-9D90-42D2-9922-00A08D26DEF6}
+	EndProjectSection
+	ProjectSection(SolutionConfiguration) = postProject
+		Release Editor.ActiveCfg = Release|Win32
+		Debug Editor.ActiveCfg = Debug|Win32
+		Debug.ActiveCfg = Debug|Win32
+		Debug.Build.0 = Debug|Win32
+		Release.ActiveCfg = Release|Win32
+		Release.Build.0 = Release|Win32
+		Debug Recorder.ActiveCfg = Debug|Win32
+		Debug Recorder.Build.0 = Debug|Win32
+		Release Recorder.ActiveCfg = Release|Win32
+		Release Recorder.Build.0 = Release|Win32
+		Release Recorder.Deploy.0 = Release|Win32
+		Debug Player.ActiveCfg = Debug|Win32
+		Release Player.ActiveCfg = Release|Win32
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoveLineUtil", "LoveLineUtil\LoveLineUtil.vcproj", "{C376AAC8-9D90-42D2-9922-00A08D26DEF6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+	ProjectSection(SolutionConfiguration) = postProject
+		Release Editor.ActiveCfg = Release|Win32
+		Release Editor.Build.0 = Release|Win32
+		Debug Editor.ActiveCfg = Debug|Win32
+		Debug Editor.Build.0 = Debug|Win32
+		Debug.ActiveCfg = Debug|Win32
+		Debug.Build.0 = Debug|Win32
+		Release.ActiveCfg = Release|Win32
+		Release.Build.0 = Release|Win32
+		Debug Recorder.ActiveCfg = Debug|Win32
+		Debug Recorder.Build.0 = Debug|Win32
+		Release Recorder.ActiveCfg = Release|Win32
+		Release Recorder.Build.0 = Release|Win32
+		Debug Player.ActiveCfg = Debug|Win32
+		Debug Player.Build.0 = Debug|Win32
+		Release Player.ActiveCfg = Release|Win32
+		Release Player.Build.0 = Release|Win32
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoveLinePlayer", "LoveLinePlayer\LoveLinePlayer.vcproj", "{9AD5D168-39C8-4C52-BE23-605FDC376418}"
+	ProjectSection(ProjectDependencies) = postProject
+		0 = {C376AAC8-9D90-42D2-9922-00A08D26DEF6}
+	EndProjectSection
+	ProjectSection(SolutionConfiguration) = postProject
+		Release Editor.ActiveCfg = Release|Win32
+		Debug Editor.ActiveCfg = Debug|Win32
+		Debug.ActiveCfg = Debug|Win32
+		Debug.Build.0 = Debug|Win32
+		Release.ActiveCfg = Release|Win32
+		Release.Build.0 = Release|Win32
+		Debug Recorder.ActiveCfg = Debug|Win32
+		Release Recorder.ActiveCfg = Release|Win32
+		Release Recorder.Deploy.0 = Release|Win32
+		Debug Player.ActiveCfg = Debug|Win32
+		Debug Player.Build.0 = Debug|Win32
+		Release Player.ActiveCfg = Release|Win32
+		Release Player.Build.0 = Release|Win32
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Release Player
+		ConfigName.1 = Debug Player
+		ConfigName.2 = Release Recorder
+		ConfigName.3 = Debug Recorder
+		ConfigName.4 = Release
+		ConfigName.5 = Debug
+		ConfigName.6 = Debug Editor
+		ConfigName.7 = Release Editor
+		DoSign = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

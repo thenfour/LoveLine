@@ -1,0 +1,415 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_SAMPLERATE,86,27,134,113,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BITDEPTH,86,69,134,113,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CHANNELS,86,111,134,113,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sample rate",IDC_STATIC,17,30,46,8
+    LTEXT           "Bit depth",IDC_STATIC,17,72,46,8
+    LTEXT           "Channels",IDC_STATIC,17,114,46,8
+    LTEXT           "The sample rate is how often the sound card grabs data from the incoming source.  For example, a CD is recorded at 44100 samples per second.",
+                    IDC_STATIC,7,7,303,16
+    LTEXT           "The bit depth is how accurate each sample is.  A CD is recorded at 16-bit clarity.  Only 8-bit and 16-bit are supported.",
+                    IDC_STATIC,7,49,303,16
+    LTEXT           "Enter the number of channels to record.  A stereo recording, like a CD, is 2 channels, while a mono recording is 1.",
+                    IDC_STATIC,7,91,303,16
+END
+
+IDD_READY DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_OPTIONS,17,18,293,107,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Verify that the following settings are correct.  Then click Next to begin recording.",
+                    IDC_STATIC,17,7,252,8
+END
+
+IDD_WELCOME DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Welcome to the LoveLine Recorder",IDC_TITLE,115,8,195,
+                    24
+    LTEXT           "This program will record incoming audio to a file.  Run this program with the -? switch to see command-line options to automate tasks.",
+                    IDC_STATIC,115,40,195,24
+END
+
+IDD_RECORD DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",0x1,7,7,303,
+                    10
+    LTEXT           "Time elapsed",IDC_STATIC,17,24,43,8
+    LTEXT           "Time remaining",IDC_STATIC,17,42,48,8
+    EDITTEXT        IDC_REMAINING,78,42,54,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT
+    EDITTEXT        IDC_ELAPSED,78,24,54,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT
+    EDITTEXT        IDC_LOG,7,75,303,34,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "Details",IDC_STATIC,7,63,22,8
+    LTEXT           "Recording",IDC_RECORDING,210,24,100,32
+    LTEXT           "Meter window goes here!",IDC_METER,7,113,303,23
+END
+
+IDD_FILENAME DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FILENAME,86,19,151,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,241,19,50,15
+    EDITTEXT        IDC_LENGTH,86,53,151,15,ES_AUTOHSCROLL
+    CONTROL         "Automatically Exit",IDC_AUTOEXIT,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,17,
+                    87,77,10
+    LTEXT           "File name",IDC_STATIC,17,22,46,8
+    LTEXT           "The file name is the name of the file the audio will be recorded to.",
+                    IDC_STATIC,7,7,205,8
+    LTEXT           "Length (sec)",IDC_STATIC,17,56,46,8
+    LTEXT           "How long should LoveLine Recorder record?  Enter the number of seconds (3600s  = 1 h).",
+                    IDC_STATIC,7,41,303,8
+    LTEXT           "LoveLine Recorder can automatically exit when recording has finished.",
+                    IDC_STATIC,7,75,303,8
+    LTEXT           "Delete the intermediate .WAV file automatically?",
+                    IDC_STATIC,8,104,302,8
+    CONTROL         "Delete the file?",IDC_DELETE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,17,116,77,10
+END
+
+IDD_COMPLETED DIALOGEX 0, 0, 317, 193
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Completion of the recording",IDC_TITLE,115,8,195,24
+    LTEXT           "LoveLine Recorder has finished recording audio.  See below for a performance summary.",
+                    IDC_STATIC,115,40,195,24
+    EDITTEXT        IDC_LOG,115,68,195,118,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL,WS_EX_TRANSPARENT
+END
+
+IDD_BITRATE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Bit rate",IDC_STATIC,17,30,46,8
+    LTEXT           "The bitrate determines how much compression will be used.  A low bitrate will produce a small file but lower quality.",
+                    IDC_STATIC,7,7,303,16
+    COMBOBOX        IDC_BITRATE,86,27,134,87,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "The output file can be automatically registered in the LoveLine database.  Check this box if you would like LoveLine Recorder to do this.",
+                    IDC_STATIC,7,49,303,16
+    CONTROL         "Add to Database",IDC_ADDTODB,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,17,69,77,10
+END
+
+IDD_ENCODE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",0x1,7,7,303,
+                    10
+    LTEXT           "Time elapsed",IDC_STATIC,17,24,43,8
+    LTEXT           "Time remaining",IDC_STATIC,17,42,48,8
+    EDITTEXT        IDC_REMAINING,78,42,54,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT
+    EDITTEXT        IDC_ELAPSED,78,24,54,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_RIGHT
+    EDITTEXT        IDC_LOG,7,75,303,61,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "Details",IDC_STATIC,7,63,22,8
+    LTEXT           "Encoding",IDC_ENCODING,210,24,100,32
+END
+
+IDD_DEVICE DIALOGEX 0, 0, 317, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LoveLine Recorder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Device",IDC_STATIC,17,22,46,8
+    LTEXT           "The device that will be used for recording",IDC_STATIC,
+                    7,7,131,8
+    COMBOBOX        IDC_DEVICE,94,22,168,78,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EXTENDEDINFO,94,49,168,87,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Extended info",IDC_STATIC,17,49,46,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 17
+        VERTGUIDE, 86
+        VERTGUIDE, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+        HORZGUIDE, 23
+        HORZGUIDE, 42
+        HORZGUIDE, 49
+        HORZGUIDE, 65
+        HORZGUIDE, 84
+        HORZGUIDE, 107
+    END
+
+    IDD_READY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 17
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 17
+        VERTGUIDE, 78
+        VERTGUIDE, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+        HORZGUIDE, 56
+        HORZGUIDE, 71
+        HORZGUIDE, 113
+    END
+
+    IDD_FILENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 17
+        VERTGUIDE, 86
+        VERTGUIDE, 94
+        VERTGUIDE, 241
+        VERTGUIDE, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+        HORZGUIDE, 15
+        HORZGUIDE, 34
+        HORZGUIDE, 49
+        HORZGUIDE, 68
+        HORZGUIDE, 83
+        HORZGUIDE, 97
+        HORZGUIDE, 112
+    END
+
+    IDD_COMPLETED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+        HORZGUIDE, 32
+        HORZGUIDE, 64
+    END
+
+    IDD_BITRATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 17
+        VERTGUIDE, 86
+        VERTGUIDE, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+        HORZGUIDE, 23
+        HORZGUIDE, 42
+        HORZGUIDE, 49
+        HORZGUIDE, 65
+        HORZGUIDE, 84
+        HORZGUIDE, 107
+    END
+
+    IDD_ENCODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 17
+        VERTGUIDE, 78
+        VERTGUIDE, 132
+        VERTGUIDE, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+        HORZGUIDE, 17
+        HORZGUIDE, 56
+        HORZGUIDE, 71
+    END
+
+    IDD_DEVICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        VERTGUIDE, 17
+        VERTGUIDE, 86
+        VERTGUIDE, 94
+        VERTGUIDE, 262
+        VERTGUIDE, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+        HORZGUIDE, 15
+        HORZGUIDE, 34
+        HORZGUIDE, 49
+        HORZGUIDE, 68
+        HORZGUIDE, 83
+        HORZGUIDE, 97
+        HORZGUIDE, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HEADER              BITMAP                  "Header.bmp"
+IDB_WATERMARK           BITMAP                  "Watermark.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "Icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,2,4,0
+ PRODUCTVERSION 3,2,4,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Carl Corcoran (c) 2001-2003"
+            VALUE "FileDescription", "LoveLine Recorder"
+            VALUE "FileVersion", "3, 2, 4, 0"
+            VALUE "ProductVersion", "3, 2, 4, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

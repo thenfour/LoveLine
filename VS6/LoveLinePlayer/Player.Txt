@@ -1,0 +1,73 @@
+FOR PLAYER
+[ ] Fader is stupid looking
+
+FOR RECORDER
+[ ] Level meter
+
+
+PLAYER TESTED AND VERIFIED:
+[x] Hangs when finished
+[x] Fixed some un-freed resources (fonts, events)
+[x] MP3 encoder doesn't sound quite right.
+[x] Navigation isn't quite right.
+[x] Bookmark dragging is kinda hard to do.
+[x] Library shouldn't prompt when WAV files are found.
+[x] Need duplicate database instance prevention.
+[-] WaveUtils plugin
+[-] Log plugin
+[x] Slider appears incorrect when it's large.  - Range problem with 32-bit values.  Using QWORDs now.
+[x] When seeking PAST the end of a file, an EC_COMPLETE notification doesn't get sent.
+[x] Commercials aren't the right size.
+[x] Commercial area editor
+[x] Can't save at will.
+[x] Slider: When holding shift and dragging a commercial, slider will try to delete it.
+[x] Slider: Holding SHIFT is really crappy.
+[x] SINGLE_CLICKING on the feature-links list plays the link...
+[x] Database files aren't unicode
+[-] Window doesn't appear on task bar sometimes. (may be fixed by the window position feature)
+[x] Slider doesn't allow you to drag stuff OFF
+[x] Slider invalidation is incorrect sometimes...
+[x] Browse button doesn't work on Episodes
+[x] Need volume control
+[x] Playback window's view is stupid looking
+[x] Need to implement forward and back buttons
+[x] Duplicate episodes not allowed in the database
+[x] Features - link double click doesn't work
+[x] Episodes - link double click doesn't work
+[x] Ensure all lists sort correctly, and interface deals well with a large database.
+[x] Deleting a feature leaves behind broken link objects in the database.
+[x] Feature info dialog box doesn't set focus initially.
+[x] Need to handle the case of no episode selected / deleting the current episdoe.
+[x] Need to handle changing episodes automatically
+[x] Need to handle SHIFT while dragging in the slider.
+[x] Episode window
+[x] Adding commercials in the slider doesn't send a LL_DBUPDATE notification.
+[x] Images in all lists
+[x] When stopped, playback will start up again all the time.
+[x] Splash screen shows individual plugins
+[x] Check for new episodes on launch
+[x] Check for BAD episodes on launch
+[-] Need Navigation listview
+[-] Need Image on the playback screen
+[x] No icon on main window or any dialogs
+[x] Search edit box doesn't work on features window.
+[x] Setting: Playing or stopped?
+[x] Setting: volume
+[x] Setting: Window position
+[x] Setting: Column width, position, sort order
+[x] Slider doesn't check bounds on anything
+
+RECORDER TESTED AND VERIFIED:
+[x] Files are not registered in the database automatically.
+[x] Bitrate screen is totally worthless.
+[x] Window doesn't minimize (PHEWWWWW)
+[x] Need to test MP3 stuff
+[x] Stupid read failure warning has gone bye-bye.
+[x] Files weren't added to database with a relative path.  Fixed.
+[x] CCString::Truncate() did not handle truncating to the current size (not affecting the string).  AV would occur.  Fixed.
+[x] It was impossible to choose "NO" for when you cancel a recording - you are forced to quit.
+
+
+
+
+

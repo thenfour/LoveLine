@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoveLinePlayer", "LoveLinePlayer\LoveLinePlayer.vcproj", "{084A2EAF-924B-4938-8174-E9FEE989F09C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6976E938-81A2-4404-863D-8DD4690ADBFB} = {6976E938-81A2-4404-863D-8DD4690ADBFB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoveLineUtil", "LoveLineUtil\LoveLineUtil.vcproj", "{6976E938-81A2-4404-863D-8DD4690ADBFB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{084A2EAF-924B-4938-8174-E9FEE989F09C}.Debug.ActiveCfg = Debug|Win32
+		{084A2EAF-924B-4938-8174-E9FEE989F09C}.Debug.Build.0 = Debug|Win32
+		{084A2EAF-924B-4938-8174-E9FEE989F09C}.Release.ActiveCfg = Release|Win32
+		{084A2EAF-924B-4938-8174-E9FEE989F09C}.Release.Build.0 = Release|Win32
+		{6976E938-81A2-4404-863D-8DD4690ADBFB}.Debug.ActiveCfg = Debug|Win32
+		{6976E938-81A2-4404-863D-8DD4690ADBFB}.Debug.Build.0 = Debug|Win32
+		{6976E938-81A2-4404-863D-8DD4690ADBFB}.Release.ActiveCfg = Release|Win32
+		{6976E938-81A2-4404-863D-8DD4690ADBFB}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

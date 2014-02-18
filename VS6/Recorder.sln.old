@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoveLineRecorder", "LoveLineRecorder\LoveLineRecorder.vcproj", "{EA09C25B-BEB8-4829-8F26-0464249700A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoveLineUtil", "LoveLineUtil\LoveLineUtil.vcproj", "{6976E938-81A2-4404-863D-8DD4690ADBFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{EA09C25B-BEB8-4829-8F26-0464249700A2}.0 = {6976E938-81A2-4404-863D-8DD4690ADBFB}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EA09C25B-BEB8-4829-8F26-0464249700A2}.Debug.ActiveCfg = Debug|Win32
+		{EA09C25B-BEB8-4829-8F26-0464249700A2}.Debug.Build.0 = Debug|Win32
+		{EA09C25B-BEB8-4829-8F26-0464249700A2}.Release.ActiveCfg = Release|Win32
+		{EA09C25B-BEB8-4829-8F26-0464249700A2}.Release.Build.0 = Release|Win32
+		{6976E938-81A2-4404-863D-8DD4690ADBFB}.Debug.ActiveCfg = Debug|Win32
+		{6976E938-81A2-4404-863D-8DD4690ADBFB}.Debug.Build.0 = Debug|Win32
+		{6976E938-81A2-4404-863D-8DD4690ADBFB}.Release.ActiveCfg = Release|Win32
+		{6976E938-81A2-4404-863D-8DD4690ADBFB}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
